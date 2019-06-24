@@ -1,14 +1,13 @@
-<li  [ngClass]="{'list-group-item': true,
+<li [ngClass]="{'list-group-item': true,
                 'list-group-item-success': getColor() === 'darkgreen',
-                'list-group-item-danger': getColor() === 'darkred'}">
+                'list-group-item-danger': getColor() === 'darkred'}"
+    [ngStyle]="{color: getColor()}">
 
+  <h2>Titre : {{ title }}</h2>
+  <h4>Date de publication  : {{ created_at | date: 'EEEE d MMMM y,HH:mm' }}</h4>
+  <p>Contenu : {{ content }}</p>
 
-  <h4 [ngStyle]="{color: getColor()}">
-    <p>Titre : {{ title }}</p>
-    <p>Contenu : {{ content }}</p></h4>
-
-
-  <input type="text" class="form-control" [(ngModel)]="content">
+  <!-- <input type="text" class="form-control" [(ngModel)]="content"> -->
 
   <button class="btn btn-sm btn-success"
           (click)="onLike()">J'aime {{loveIts}}</button>

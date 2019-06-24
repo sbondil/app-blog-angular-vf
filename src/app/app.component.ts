@@ -11,14 +11,14 @@ export class AppComponent {
   PostsArray: Post[] = [
     {
       title: 'Mon premier post',
-      content: 'Les cons, ça ose tout. C est même à ça qu on les reconnaît',
+      content: 'Les cons, ça ose tout. C\' est même à ça qu on les reconnaît',
       loveIts: 0,
       dloveIts: 0,
       created_at: new Date()
     },
     {
       title: 'Mon second post',
-      content: 'J ai connu une polonaise qui en prenait au p tit déjeuner',
+      content: 'J ai connu une polonaise qui en prenait au p\' tit déjeuner',
       loveIts: 0,
       dloveIts: 0,
       created_at: new Date()

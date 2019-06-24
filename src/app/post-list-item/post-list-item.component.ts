@@ -23,6 +23,7 @@ export class PostListItemComponent implements OnInit {
     if(this.loveIts >= this.dloveIts){
       return 'darkgreen';
     } else if  (this.loveIts < this.dloveIts){
+      return 'darkred';
     }
   }
   onLike(){
